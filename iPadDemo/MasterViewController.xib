@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MasterViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZF-Wd-4ns">
+                    <rect key="frame" x="152" y="181" width="70" height="76"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Wcr-90-mT2"/>
+                        <constraint firstAttribute="height" constant="76" id="sRY-Tn-ncu"/>
+                    </constraints>
+                    <state key="normal" title="Default"/>
+                    <connections>
+                        <action selector="changeViewController:" destination="-1" eventType="touchUpInside" id="WFD-RP-rK3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeB-d3-ZxU">
+                    <rect key="frame" x="152" y="337" width="70" height="76"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="iQ5-ip-0sW"/>
+                        <constraint firstAttribute="width" constant="70" id="xvX-eu-g2B"/>
+                    </constraints>
+                    <state key="normal" title="First"/>
+                    <connections>
+                        <action selector="changeViewController:" destination="-1" eventType="touchUpInside" id="pVD-H7-aAz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtX-E1-COb">
+                    <rect key="frame" x="152" y="493" width="70" height="76"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="CGL-DV-plA"/>
+                        <constraint firstAttribute="width" constant="70" id="Eid-4M-HrL"/>
+                    </constraints>
+                    <state key="normal" title="Second"/>
+                    <connections>
+                        <action selector="changeViewController:" destination="-1" eventType="touchUpInside" id="NNw-db-1gF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.070588235289999995" green="0.58823529409999997" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="1ZF-Wd-4ns" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="181" id="Fqj-eD-igt"/>
+                <constraint firstItem="PtX-E1-COb" firstAttribute="top" secondItem="KeB-d3-ZxU" secondAttribute="bottom" constant="80" id="Hbr-MW-Gt9"/>
+                <constraint firstItem="KeB-d3-ZxU" firstAttribute="top" secondItem="1ZF-Wd-4ns" secondAttribute="bottom" constant="80" id="KPU-RO-HFr"/>
+                <constraint firstItem="KeB-d3-ZxU" firstAttribute="top" secondItem="1ZF-Wd-4ns" secondAttribute="bottom" constant="80" id="XSG-EI-rH6"/>
+                <constraint firstItem="PtX-E1-COb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XVo-WX-DqV"/>
+                <constraint firstItem="1ZF-Wd-4ns" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yio-8x-Fek"/>
+                <constraint firstItem="KeB-d3-ZxU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="awa-Lk-L6j"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
